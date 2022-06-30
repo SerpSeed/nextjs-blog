@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Date from 'components/date';
-import { getAllPostIds, getPostData } from 'lib/posts';
+import Date from '/components/date';
+import { getAllPostIds, getPostData } from '/lib/posts';
 import { MDXRemote } from 'next-mdx-remote';
 
 export default function BlogPost({ source, frontMatter }) {
