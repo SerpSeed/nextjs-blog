@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <> {/* Added this fragment to remove the need of an additional DOM node wrapping the data below. */}
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Test site." />
+        <title>Hello Blog</title>
+        <meta name="description" content="Test Blog." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.home}>
