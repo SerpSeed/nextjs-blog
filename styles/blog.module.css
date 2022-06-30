@@ -1,0 +1,24 @@
+.article {
+    padding: 5px 40px;
+    margin: 26px 0;
+    background-color: rgb(23, 28, 23);
+}
+
+.author {
+    font-size: 12px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.main a {
+    color: rgb(160, 206, 78);
+    text-decoration: none;
+}
+
+.main a:visited {
+    color: rgb(160, 206, 78);
+}
+
+.main a:hover {
+    color: rgb(0, 100, 0);
+}

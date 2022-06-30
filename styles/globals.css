@@ -1,16 +1,94 @@
-html,
+:root {
+  --color: rgb(241, 255, 241);
+  --bg-color: rgb(14, 18, 14);
+  --secondary-bg-color: rgb(250, 250, 250);
+  --dropdown-bg-color: rgb(245, 245, 245);
+  --dropdown-hover-color: rgb(243, 243, 243);
+  --border-color: rgb(211, 211, 211);
+  --blog-button: rgb(0, 0, 0);
+  --a-link: rgb(160, 206, 78);
+  --a-visited: rgb(160, 206, 78);
+  --a-hover: rgb(0, 100, 0);
+}
+
+[data-theme="dark"] {
+  --color: rgb(246, 250, 237);
+  --bg-color: rgb(16, 21, 8);
+  --secondary-bg-color: rgb(32, 41, 16);
+  --dropdown-bg-color: rgb(30, 30, 30);
+  --dropdown-hover-color: rgb(32, 41, 16);
+  --border-color: rgb(64, 82, 31);
+  --blog-button: rgb(0, 117, 0);
+  --a-link: rgb(160, 206, 78);
+  --a-visited: rgb(160, 206, 78);
+  --a-hover: rgb(0, 100, 0);
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+  font-style: normal;
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 a {
-  color: inherit;
+  color: var(--a-link);
   text-decoration: none;
+  outline-color: var(--a-hover);
 }
 
-* {
-  box-sizing: border-box;
+a:visited {
+  color: var(--a-visited);
+}
+
+a:hover {
+  color: var(--a-hover);
+}
+
+
+main {
+  flex: 1;
+  margin: 0 auto;
+  padding: 30px 30px 10px 20px;
+  max-width: 1200px;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 12px;
+  color: white;
 }
