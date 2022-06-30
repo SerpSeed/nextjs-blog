@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '../components/layout-home';
-import styles from '../styles/home.module.css';
+import Layout from 'components/layout-home';
+import styles from 'styles/home.module.css';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
 
         <p className={styles.subtitle}>Web Design &middot; Development &middot; Optimization</p>
 
-        <Link href="/blog"><a className={styles.button_start}>Learn More</a></Link>
+        <Link href="./blog"><a className={styles.button_start}>Learn More</a></Link>
       </main>
     </>
   )
