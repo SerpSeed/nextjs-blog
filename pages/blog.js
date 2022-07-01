@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
-import styles from '../styles/Blog.module.css';
+import styles from './Blog.module.css';
 
 
 export default function Blog({ allPostsData }) {
