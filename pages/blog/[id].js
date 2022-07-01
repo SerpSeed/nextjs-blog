@@ -5,10 +5,11 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import { MDXRemote } from 'next-mdx-remote';
 
 export default function BlogPost({ source, frontMatter }) {
+    const title = `${frontMatter.title} | Our Site`;
     return (
         <main>
             <Head>
-                <title>{frontMatter.title}</title>
+                <title>{title}</title>
                 <meta name="description" content="Need to dynamically generate this..." />
             </Head>
             <Link href="/blog">
