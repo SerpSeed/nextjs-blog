@@ -6,7 +6,6 @@ const nextConfig = {
       allowFutureImage: true,
     },
   },
-  assetPrefix: '.',
 }
 
 module.exports = nextConfig
