@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '../components/layout-home';
+import Layout from '../layouts/home';
 import styles from './Home.module.css';
 
 export default function Home() {

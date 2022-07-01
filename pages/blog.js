@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
@@ -7,6 +8,10 @@ import styles from './Blog.module.css';
 export default function Blog({ allPostsData }) {
     return (
         <main className={styles.main}>
+            <Head>
+                <title>Our Blog</title>
+                <meta name="description" content="Latest from our blog." />
+            </Head>
             <h1>Latest From Our Blog</h1>
             <section>
                 {allPostsData.map(({ id, frontMatter }) => (
@@ -23,7 +28,6 @@ export default function Blog({ allPostsData }) {
                 ))}
             </section>
         </main>
-
     );
 }
 

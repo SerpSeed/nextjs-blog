@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   experimental: {
     images: {
       allowFutureImage: true,
     },
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
 }
-
-module.exports = nextConfig

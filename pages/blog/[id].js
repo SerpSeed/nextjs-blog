@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
@@ -6,6 +7,10 @@ import { MDXRemote } from 'next-mdx-remote';
 export default function BlogPost({ source, frontMatter }) {
     return (
         <main>
+            <Head>
+                <title>{frontMatter.title}</title>
+                <meta name="description" content="Need to dynamically generate this..." />
+            </Head>
             <Link href="/blog">
                 <a>&larr; Return to Blog</a>
             </Link>
@@ -29,7 +34,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    //const postData = await getPostData(params.id);
     const { source, frontMatter } = await getPostData(params.id);
     return {
         props: {
