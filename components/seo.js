@@ -80,7 +80,3 @@ export default function Seo(props) {
         </Head>
     )
 }
-
-function buildTags() {
-    const tagsToRender = [];
-}
