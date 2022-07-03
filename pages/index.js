@@ -1,21 +1,22 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import Layout from '../layouts/home';
-import styles from './Home.module.css';
+import Head from 'next/head'
+import Link from 'next/link'
+import Seo from '../components/seo'
+import Layout from '../layouts/home'
+import styles from './Home.module.css'
 
 export default function Home() {
   return (
     <main className={styles.home}>
+
+      <Seo />
       <Head>
-        <title>Hello Blog</title>
-        <meta name="description" content="Test Blog." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className={styles.title}>&gt;_Hello</h1>
 
       <p className={styles.subtitle}>Web Design &middot; Development &middot; Optimization</p>
 
-      <Link href="./blog"><a className={styles.button_start}>Learn More</a></Link>
+      <Link href="./blog"><a className={styles.button_start}>Read Our Blog</a></Link>
     </main>
   )
 }
